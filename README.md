@@ -121,4 +121,12 @@
 
 
 
-借鉴了这篇文章的思路 http://blog.csdn.net/hypercode/article/details/53434687
+参考文章：
+http://blog.csdn.net/hypercode/article/details/53434687
+http://devma.cn/blog/2016/11/10/ios-beng-kui-crash-jie-xi/#新老操作系统兼容
+http://stackoverflow.com/questions/19560198/ios-app-error-cant-add-self-as-subview
+http://tech.glowing.com/cn/how-we-made-nsdictionary-nil-safe/
+http://stackoverflow.com/questions/108183/how-to-prevent-sigpipes-or-handle-them-properly
+
+
+
