@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		496DB6CB1E1FBC7E00FE2387 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 496DB6CA1E1FBC7E00FE2387 /* main.m */; };
+		496DB6CE1E1FBC7E00FE2387 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 496DB6CD1E1FBC7E00FE2387 /* AppDelegate.m */; };
+		496DB6D11E1FBC7E00FE2387 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 496DB6D01E1FBC7E00FE2387 /* ViewController.m */; };
+		496DB6D41E1FBC7E00FE2387 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496DB6D21E1FBC7E00FE2387 /* Main.storyboard */; };
+		496DB6D61E1FBC7E00FE2387 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 496DB6D51E1FBC7E00FE2387 /* Assets.xcassets */; };
+		496DB6D91E1FBC7E00FE2387 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496DB6D71E1FBC7E00FE2387 /* LaunchScreen.storyboard */; };
+		496DB6E41E1FBC7E00FE2387 /* CrashToolDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 496DB6E31E1FBC7E00FE2387 /* CrashToolDemoTests.m */; };
+		496DB6EF1E1FBC7E00FE2387 /* CrashToolDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 496DB6EE1E1FBC7E00FE2387 /* CrashToolDemoUITests.m */; };
+		496DB7151E1FBCE300FE2387 /* CrashTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 496DB6FE1E1FBCE300FE2387 /* CrashTool.m */; };
+		496DB7161E1FBCE300FE2387 /* NSArray+CrashTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 496DB7001E1FBCE300FE2387 /* NSArray+CrashTool.m */; };
+		496DB7171E1FBCE300FE2387 /* NSAttributedString+CrashTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 496DB7021E1FBCE300FE2387 /* NSAttributedString+CrashTool.m */; };
+		496DB7181E1FBCE300FE2387 /* NSDictionary+CrashTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 496DB7041E1FBCE300FE2387 /* NSDictionary+CrashTool.m */; };
+		496DB7191E1FBCE300FE2387 /* NSMutableArray+CrashTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 496DB7061E1FBCE300FE2387 /* NSMutableArray+CrashTool.m */; };
+		496DB71A1E1FBCE300FE2387 /* NSMutableAttributedString+CrashTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 496DB7081E1FBCE300FE2387 /* NSMutableAttributedString+CrashTool.m */; };
+		496DB71B1E1FBCE300FE2387 /* NSMutableDictionary+CrashTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 496DB70A1E1FBCE300FE2387 /* NSMutableDictionary+CrashTool.m */; };
+		496DB71C1E1FBCE300FE2387 /* NSMutableString+CrashTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 496DB70C1E1FBCE300FE2387 /* NSMutableString+CrashTool.m */; };
+		496DB71D1E1FBCE300FE2387 /* NSObject+CrashTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 496DB70E1E1FBCE300FE2387 /* NSObject+CrashTool.m */; };
+		496DB71E1E1FBCE300FE2387 /* NSString+CrashTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 496DB7101E1FBCE300FE2387 /* NSString+CrashTool.m */; };
+		496DB71F1E1FBCE300FE2387 /* StubProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 496DB7121E1FBCE300FE2387 /* StubProxy.m */; };
+		496DB7201E1FBCE300FE2387 /* UINavigationController+CrashTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 496DB7141E1FBCE300FE2387 /* UINavigationController+CrashTool.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		496DB6E01E1FBC7E00FE2387 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 496DB6BE1E1FBC7D00FE2387 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 496DB6C51E1FBC7E00FE2387;
+			remoteInfo = CrashToolDemo;
+		};
+		496DB6EB1E1FBC7E00FE2387 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 496DB6BE1E1FBC7D00FE2387 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 496DB6C51E1FBC7E00FE2387;
+			remoteInfo = CrashToolDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		496DB6C61E1FBC7E00FE2387 /* CrashToolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrashToolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		496DB6CA1E1FBC7E00FE2387 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		496DB6CC1E1FBC7E00FE2387 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		496DB6CD1E1FBC7E00FE2387 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		496DB6CF1E1FBC7E00FE2387 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		496DB6D01E1FBC7E00FE2387 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		496DB6D31E1FBC7E00FE2387 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		496DB6D51E1FBC7E00FE2387 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		496DB6D81E1FBC7E00FE2387 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		496DB6DA1E1FBC7E00FE2387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		496DB6DF1E1FBC7E00FE2387 /* CrashToolDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrashToolDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		496DB6E31E1FBC7E00FE2387 /* CrashToolDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashToolDemoTests.m; sourceTree = "<group>"; };
+		496DB6E51E1FBC7E00FE2387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		496DB6EA1E1FBC7E00FE2387 /* CrashToolDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrashToolDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		496DB6EE1E1FBC7E00FE2387 /* CrashToolDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrashToolDemoUITests.m; sourceTree = "<group>"; };
+		496DB6F01E1FBC7E00FE2387 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		496DB6FD1E1FBCE300FE2387 /* CrashTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashTool.h; sourceTree = "<group>"; };
+		496DB6FE1E1FBCE300FE2387 /* CrashTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashTool.m; sourceTree = "<group>"; };
+		496DB6FF1E1FBCE300FE2387 /* NSArray+CrashTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CrashTool.h"; sourceTree = "<group>"; };
+		496DB7001E1FBCE300FE2387 /* NSArray+CrashTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CrashTool.m"; sourceTree = "<group>"; };
+		496DB7011E1FBCE300FE2387 /* NSAttributedString+CrashTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+CrashTool.h"; sourceTree = "<group>"; };
+		496DB7021E1FBCE300FE2387 /* NSAttributedString+CrashTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+CrashTool.m"; sourceTree = "<group>"; };
+		496DB7031E1FBCE300FE2387 /* NSDictionary+CrashTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CrashTool.h"; sourceTree = "<group>"; };
+		496DB7041E1FBCE300FE2387 /* NSDictionary+CrashTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CrashTool.m"; sourceTree = "<group>"; };
+		496DB7051E1FBCE300FE2387 /* NSMutableArray+CrashTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+CrashTool.h"; sourceTree = "<group>"; };
+		496DB7061E1FBCE300FE2387 /* NSMutableArray+CrashTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+CrashTool.m"; sourceTree = "<group>"; };
+		496DB7071E1FBCE300FE2387 /* NSMutableAttributedString+CrashTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+CrashTool.h"; sourceTree = "<group>"; };
+		496DB7081E1FBCE300FE2387 /* NSMutableAttributedString+CrashTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+CrashTool.m"; sourceTree = "<group>"; };
+		496DB7091E1FBCE300FE2387 /* NSMutableDictionary+CrashTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+CrashTool.h"; sourceTree = "<group>"; };
+		496DB70A1E1FBCE300FE2387 /* NSMutableDictionary+CrashTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+CrashTool.m"; sourceTree = "<group>"; };
+		496DB70B1E1FBCE300FE2387 /* NSMutableString+CrashTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+CrashTool.h"; sourceTree = "<group>"; };
+		496DB70C1E1FBCE300FE2387 /* NSMutableString+CrashTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+CrashTool.m"; sourceTree = "<group>"; };
+		496DB70D1E1FBCE300FE2387 /* NSObject+CrashTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CrashTool.h"; sourceTree = "<group>"; };
+		496DB70E1E1FBCE300FE2387 /* NSObject+CrashTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CrashTool.m"; sourceTree = "<group>"; };
+		496DB70F1E1FBCE300FE2387 /* NSString+CrashTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CrashTool.h"; sourceTree = "<group>"; };
+		496DB7101E1FBCE300FE2387 /* NSString+CrashTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CrashTool.m"; sourceTree = "<group>"; };
+		496DB7111E1FBCE300FE2387 /* StubProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StubProxy.h; sourceTree = "<group>"; };
+		496DB7121E1FBCE300FE2387 /* StubProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StubProxy.m; sourceTree = "<group>"; };
+		496DB7131E1FBCE300FE2387 /* UINavigationController+CrashTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+CrashTool.h"; sourceTree = "<group>"; };
+		496DB7141E1FBCE300FE2387 /* UINavigationController+CrashTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+CrashTool.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		496DB6C31E1FBC7E00FE2387 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		496DB6DC1E1FBC7E00FE2387 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		496DB6E71E1FBC7E00FE2387 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		496DB6BD1E1FBC7D00FE2387 = {
+			isa = PBXGroup;
+			children = (
+				496DB6FC1E1FBCE300FE2387 /* CrashTool */,
+				496DB6C81E1FBC7E00FE2387 /* CrashToolDemo */,
+				496DB6E21E1FBC7E00FE2387 /* CrashToolDemoTests */,
+				496DB6ED1E1FBC7E00FE2387 /* CrashToolDemoUITests */,
+				496DB6C71E1FBC7E00FE2387 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		496DB6C71E1FBC7E00FE2387 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				496DB6C61E1FBC7E00FE2387 /* CrashToolDemo.app */,
+				496DB6DF1E1FBC7E00FE2387 /* CrashToolDemoTests.xctest */,
+				496DB6EA1E1FBC7E00FE2387 /* CrashToolDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		496DB6C81E1FBC7E00FE2387 /* CrashToolDemo */ = {
+			isa = PBXGroup;
+			children = (
+				496DB6CC1E1FBC7E00FE2387 /* AppDelegate.h */,
+				496DB6CD1E1FBC7E00FE2387 /* AppDelegate.m */,
+				496DB6CF1E1FBC7E00FE2387 /* ViewController.h */,
+				496DB6D01E1FBC7E00FE2387 /* ViewController.m */,
+				496DB6D21E1FBC7E00FE2387 /* Main.storyboard */,
+				496DB6D51E1FBC7E00FE2387 /* Assets.xcassets */,
+				496DB6D71E1FBC7E00FE2387 /* LaunchScreen.storyboard */,
+				496DB6DA1E1FBC7E00FE2387 /* Info.plist */,
+				496DB6C91E1FBC7E00FE2387 /* Supporting Files */,
+			);
+			path = CrashToolDemo;
+			sourceTree = "<group>";
+		};
+		496DB6C91E1FBC7E00FE2387 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				496DB6CA1E1FBC7E00FE2387 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		496DB6E21E1FBC7E00FE2387 /* CrashToolDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				496DB6E31E1FBC7E00FE2387 /* CrashToolDemoTests.m */,
+				496DB6E51E1FBC7E00FE2387 /* Info.plist */,
+			);
+			path = CrashToolDemoTests;
+			sourceTree = "<group>";
+		};
+		496DB6ED1E1FBC7E00FE2387 /* CrashToolDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				496DB6EE1E1FBC7E00FE2387 /* CrashToolDemoUITests.m */,
+				496DB6F01E1FBC7E00FE2387 /* Info.plist */,
+			);
+			path = CrashToolDemoUITests;
+			sourceTree = "<group>";
+		};
+		496DB6FC1E1FBCE300FE2387 /* CrashTool */ = {
+			isa = PBXGroup;
+			children = (
+				496DB6FD1E1FBCE300FE2387 /* CrashTool.h */,
+				496DB6FE1E1FBCE300FE2387 /* CrashTool.m */,
+				496DB6FF1E1FBCE300FE2387 /* NSArray+CrashTool.h */,
+				496DB7001E1FBCE300FE2387 /* NSArray+CrashTool.m */,
+				496DB7011E1FBCE300FE2387 /* NSAttributedString+CrashTool.h */,
+				496DB7021E1FBCE300FE2387 /* NSAttributedString+CrashTool.m */,
+				496DB7031E1FBCE300FE2387 /* NSDictionary+CrashTool.h */,
+				496DB7041E1FBCE300FE2387 /* NSDictionary+CrashTool.m */,
+				496DB7051E1FBCE300FE2387 /* NSMutableArray+CrashTool.h */,
+				496DB7061E1FBCE300FE2387 /* NSMutableArray+CrashTool.m */,
+				496DB7071E1FBCE300FE2387 /* NSMutableAttributedString+CrashTool.h */,
+				496DB7081E1FBCE300FE2387 /* NSMutableAttributedString+CrashTool.m */,
+				496DB7091E1FBCE300FE2387 /* NSMutableDictionary+CrashTool.h */,
+				496DB70A1E1FBCE300FE2387 /* NSMutableDictionary+CrashTool.m */,
+				496DB70B1E1FBCE300FE2387 /* NSMutableString+CrashTool.h */,
+				496DB70C1E1FBCE300FE2387 /* NSMutableString+CrashTool.m */,
+				496DB70D1E1FBCE300FE2387 /* NSObject+CrashTool.h */,
+				496DB70E1E1FBCE300FE2387 /* NSObject+CrashTool.m */,
+				496DB70F1E1FBCE300FE2387 /* NSString+CrashTool.h */,
+				496DB7101E1FBCE300FE2387 /* NSString+CrashTool.m */,
+				496DB7111E1FBCE300FE2387 /* StubProxy.h */,
+				496DB7121E1FBCE300FE2387 /* StubProxy.m */,
+				496DB7131E1FBCE300FE2387 /* UINavigationController+CrashTool.h */,
+				496DB7141E1FBCE300FE2387 /* UINavigationController+CrashTool.m */,
+			);
+			name = CrashTool;
+			path = ../CrashTool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		496DB6C51E1FBC7E00FE2387 /* CrashToolDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 496DB6F31E1FBC7E00FE2387 /* Build configuration list for PBXNativeTarget "CrashToolDemo" */;
+			buildPhases = (
+				496DB6C21E1FBC7E00FE2387 /* Sources */,
+				496DB6C31E1FBC7E00FE2387 /* Frameworks */,
+				496DB6C41E1FBC7E00FE2387 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrashToolDemo;
+			productName = CrashToolDemo;
+			productReference = 496DB6C61E1FBC7E00FE2387 /* CrashToolDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		496DB6DE1E1FBC7E00FE2387 /* CrashToolDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 496DB6F61E1FBC7E00FE2387 /* Build configuration list for PBXNativeTarget "CrashToolDemoTests" */;
+			buildPhases = (
+				496DB6DB1E1FBC7E00FE2387 /* Sources */,
+				496DB6DC1E1FBC7E00FE2387 /* Frameworks */,
+				496DB6DD1E1FBC7E00FE2387 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				496DB6E11E1FBC7E00FE2387 /* PBXTargetDependency */,
+			);
+			name = CrashToolDemoTests;
+			productName = CrashToolDemoTests;
+			productReference = 496DB6DF1E1FBC7E00FE2387 /* CrashToolDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		496DB6E91E1FBC7E00FE2387 /* CrashToolDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 496DB6F91E1FBC7E00FE2387 /* Build configuration list for PBXNativeTarget "CrashToolDemoUITests" */;
+			buildPhases = (
+				496DB6E61E1FBC7E00FE2387 /* Sources */,
+				496DB6E71E1FBC7E00FE2387 /* Frameworks */,
+				496DB6E81E1FBC7E00FE2387 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				496DB6EC1E1FBC7E00FE2387 /* PBXTargetDependency */,
+			);
+			name = CrashToolDemoUITests;
+			productName = CrashToolDemoUITests;
+			productReference = 496DB6EA1E1FBC7E00FE2387 /* CrashToolDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		496DB6BE1E1FBC7D00FE2387 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Andrew;
+				TargetAttributes = {
+					496DB6C51E1FBC7E00FE2387 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+					496DB6DE1E1FBC7E00FE2387 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 496DB6C51E1FBC7E00FE2387;
+					};
+					496DB6E91E1FBC7E00FE2387 = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 496DB6C51E1FBC7E00FE2387;
+					};
+				};
+			};
+			buildConfigurationList = 496DB6C11E1FBC7D00FE2387 /* Build configuration list for PBXProject "CrashToolDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 496DB6BD1E1FBC7D00FE2387;
+			productRefGroup = 496DB6C71E1FBC7E00FE2387 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				496DB6C51E1FBC7E00FE2387 /* CrashToolDemo */,
+				496DB6DE1E1FBC7E00FE2387 /* CrashToolDemoTests */,
+				496DB6E91E1FBC7E00FE2387 /* CrashToolDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		496DB6C41E1FBC7E00FE2387 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496DB6D91E1FBC7E00FE2387 /* LaunchScreen.storyboard in Resources */,
+				496DB6D61E1FBC7E00FE2387 /* Assets.xcassets in Resources */,
+				496DB6D41E1FBC7E00FE2387 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		496DB6DD1E1FBC7E00FE2387 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		496DB6E81E1FBC7E00FE2387 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		496DB6C21E1FBC7E00FE2387 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496DB6D11E1FBC7E00FE2387 /* ViewController.m in Sources */,
+				496DB7191E1FBCE300FE2387 /* NSMutableArray+CrashTool.m in Sources */,
+				496DB7171E1FBCE300FE2387 /* NSAttributedString+CrashTool.m in Sources */,
+				496DB7151E1FBCE300FE2387 /* CrashTool.m in Sources */,
+				496DB71F1E1FBCE300FE2387 /* StubProxy.m in Sources */,
+				496DB71E1E1FBCE300FE2387 /* NSString+CrashTool.m in Sources */,
+				496DB6CE1E1FBC7E00FE2387 /* AppDelegate.m in Sources */,
+				496DB71B1E1FBCE300FE2387 /* NSMutableDictionary+CrashTool.m in Sources */,
+				496DB71A1E1FBCE300FE2387 /* NSMutableAttributedString+CrashTool.m in Sources */,
+				496DB7181E1FBCE300FE2387 /* NSDictionary+CrashTool.m in Sources */,
+				496DB6CB1E1FBC7E00FE2387 /* main.m in Sources */,
+				496DB71D1E1FBCE300FE2387 /* NSObject+CrashTool.m in Sources */,
+				496DB7201E1FBCE300FE2387 /* UINavigationController+CrashTool.m in Sources */,
+				496DB7161E1FBCE300FE2387 /* NSArray+CrashTool.m in Sources */,
+				496DB71C1E1FBCE300FE2387 /* NSMutableString+CrashTool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		496DB6DB1E1FBC7E00FE2387 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496DB6E41E1FBC7E00FE2387 /* CrashToolDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		496DB6E61E1FBC7E00FE2387 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496DB6EF1E1FBC7E00FE2387 /* CrashToolDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		496DB6E11E1FBC7E00FE2387 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 496DB6C51E1FBC7E00FE2387 /* CrashToolDemo */;
+			targetProxy = 496DB6E01E1FBC7E00FE2387 /* PBXContainerItemProxy */;
+		};
+		496DB6EC1E1FBC7E00FE2387 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 496DB6C51E1FBC7E00FE2387 /* CrashToolDemo */;
+			targetProxy = 496DB6EB1E1FBC7E00FE2387 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		496DB6D21E1FBC7E00FE2387 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				496DB6D31E1FBC7E00FE2387 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		496DB6D71E1FBC7E00FE2387 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				496DB6D81E1FBC7E00FE2387 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		496DB6F11E1FBC7E00FE2387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		496DB6F21E1FBC7E00FE2387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		496DB6F41E1FBC7E00FE2387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CrashToolDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrew.CrashToolDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		496DB6F51E1FBC7E00FE2387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CrashToolDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrew.CrashToolDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		496DB6F71E1FBC7E00FE2387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CrashToolDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrew.CrashToolDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrashToolDemo.app/CrashToolDemo";
+			};
+			name = Debug;
+		};
+		496DB6F81E1FBC7E00FE2387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CrashToolDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrew.CrashToolDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrashToolDemo.app/CrashToolDemo";
+			};
+			name = Release;
+		};
+		496DB6FA1E1FBC7E00FE2387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CrashToolDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrew.CrashToolDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CrashToolDemo;
+			};
+			name = Debug;
+		};
+		496DB6FB1E1FBC7E00FE2387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CrashToolDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrew.CrashToolDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CrashToolDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		496DB6C11E1FBC7D00FE2387 /* Build configuration list for PBXProject "CrashToolDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				496DB6F11E1FBC7E00FE2387 /* Debug */,
+				496DB6F21E1FBC7E00FE2387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		496DB6F31E1FBC7E00FE2387 /* Build configuration list for PBXNativeTarget "CrashToolDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				496DB6F41E1FBC7E00FE2387 /* Debug */,
+				496DB6F51E1FBC7E00FE2387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		496DB6F61E1FBC7E00FE2387 /* Build configuration list for PBXNativeTarget "CrashToolDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				496DB6F71E1FBC7E00FE2387 /* Debug */,
+				496DB6F81E1FBC7E00FE2387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		496DB6F91E1FBC7E00FE2387 /* Build configuration list for PBXNativeTarget "CrashToolDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				496DB6FA1E1FBC7E00FE2387 /* Debug */,
+				496DB6FB1E1FBC7E00FE2387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 496DB6BE1E1FBC7D00FE2387 /* Project object */;
+}
