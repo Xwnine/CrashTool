@@ -85,8 +85,7 @@
 
 	- (id)flee_forwardingTargetForSelector:(SEL)aSelector {
 
-		id proxy = nil;
-		[self flee_forwardingTargetForSelector:aSelector];   
+		id proxy = [self flee_forwardingTargetForSelector:aSelector];
 		if (!proxy) {           
 			NSLog(@"[%@ %@]unrecognized selector crash\n\n%@\n", [self class],      NSStringFromSelector(aSelector), [NSThread callStackSymbols]);        
 		   proxy = [[StubProxy alloc] init];
