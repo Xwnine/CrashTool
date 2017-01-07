@@ -74,6 +74,7 @@
     [self KVC_SetValueForKey];
     [self KVC_SetValueForKeyPath];
     [self KVC_SetValuesForKeysWithDictionary];
+    [self KVC_SetNullValueForKey];
     [self MessageForward_Test_selector];
     
     self.window.backgroundColor = [UIColor whiteColor];
@@ -126,7 +127,6 @@
     __unsafe_unretained id cArray[range.length];
     [arr getObjects:cArray range:range];
 }
-
 
 
 
@@ -343,6 +343,14 @@
     [table setValue:self forKey:@"flee"]; //setValue:forUndefinedKey:
 }
 
+- (void)KVC_SetNullValueForKey {
+
+    id value = nil;
+    UIViewController *controller = [UIViewController new]; //setValue:forUndefinedKey:
+    [controller setValue:value forKey:@"flee"];
+    
+}
+
 - (void)KVC_SetValueForKeyPath {
     
     UIViewController *table = [UIViewController new];
@@ -351,7 +359,6 @@
 }
 
 - (void)KVC_SetValuesForKeysWithDictionary {
-    
     UIViewController *vc = [UIViewController new];
     [vc setValuesForKeysWithDictionary:@{@"name": @"Andrew"}]; //setValue:forUndefinedKey:
     
