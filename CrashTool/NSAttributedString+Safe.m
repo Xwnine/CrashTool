@@ -44,7 +44,7 @@
 
 - (instancetype)aString_initWithString:(NSString *)str attributes:(NSDictionary<NSString *,id> *)attrs {
 
-    if (str == nil || str.length == 0 || str ==[NSNull class]) {
+    if (str == nil || str.length == 0 || str ==[NSNull class] || attrs.allKeys.count == 0) {
         NSLog(@"aString_initWithString:attributes: init with a nil string ");
         return nil;
     }
@@ -58,7 +58,7 @@
 
 - (instancetype)aString_initWithAttributedString:(NSAttributedString *)attrStr {
 
-    if (attrStr == nil || attrStr.length == 0 || attrStr == [NSNull class]) {
+    if (attrStr == nil || attrStr.length == 0 || attrStr == [NSNull class] ) {
         NSLog(@"aString_initWithString: init with a nil attrStr");
         return nil;
     }
@@ -74,7 +74,6 @@
         return nil;
     }
     return [self maString_initWithString:str];
-    
 }
 
 - (instancetype)maString_initWithString:(NSString *)str attributes:(NSDictionary<NSString *,id> *)attrs {
@@ -84,7 +83,7 @@
         return nil;
     }
     
-    if (attrs == nil || [attrs isKindOfClass:[NSNull class]]) {
+    if (attrs == nil || [attrs isKindOfClass:[NSNull class]] || attrs.allKeys.count == 0) {
         NSLog(@"maString_initWithString:attributes: init with a nil attrs");
         return nil;
     }

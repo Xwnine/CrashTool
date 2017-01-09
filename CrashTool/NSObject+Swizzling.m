@@ -45,7 +45,7 @@
         objc_property_t property = properties[i];
         
         const char *propertyName = property_getName(property);
-        const char *propertyAttributes = property_getAttributes(property);
+//        const char *propertyAttributes = property_getAttributes(property);
         if (filterName == propertyName) {
             isContain = YES;
         }
@@ -67,7 +67,7 @@
     for (unsigned int i = 0; i < outCount; ++i) {
         Ivar ivar = ivars[i];
         const char *name = ivar_getName(ivar);
-        const char *type = ivar_getTypeEncoding(ivar);
+//        const char *type = ivar_getTypeEncoding(ivar);
         if (filterName == name) {
             isContain = YES;
         }

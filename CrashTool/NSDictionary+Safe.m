@@ -18,10 +18,11 @@
         @autoreleasepool {
             
             [objc_getClass("__NSDictionaryI") swizzleClassMethod:@selector(dictionaryWithObjects:forKeys:count:) withSwizzledSel:@selector(dictionaryI_dictionaryWithObjects:forKeys:count:)];
+            
             [objc_getClass("__NSDictionaryM") swizzleInstanceMetod:@selector(setObject:forKey:) withSwizzledSel:@selector(dictionaryM_setObject:forKey:)];
             [objc_getClass("__NSDictionaryM") swizzleInstanceMetod:@selector(setObject:forKeyedSubscript:) withSwizzledSel:@selector(dictionaryM_setObject:forKeyedSubscript:)];
             
-                [objc_getClass("__NSDictionaryM") swizzleInstanceMetod:@selector(removeObjectForKey:) withSwizzledSel:@selector(dictionaryM_removeObjectForKey:)];
+            [objc_getClass("__NSDictionaryM") swizzleInstanceMetod:@selector(removeObjectForKey:) withSwizzledSel:@selector(dictionaryM_removeObjectForKey:)];
         }
     });
 }
@@ -51,9 +52,8 @@
     }
     
     if (!anObject) {
-//        NSLog(@"safe_setObject:forKey:set a nil Object for %@", anObject);
+        NSLog(@"safe_setObject:forKey:set a nil Object for %@", anObject);
         anObject = [NSNull null];
-        return;
     }
     
     [self dictionaryM_setObject:anObject forKey:aKey];
@@ -67,10 +67,8 @@
     }
     
     if (!obj) {
-//        NSLog(@"safe_setObject:forKey:set a nil Object for %@", obj);
-        
+        NSLog(@"safe_setObject:forKey:set a nil Object for %@", obj);
         obj = [NSNull null];
-        return;
     }
     
     [self dictionaryM_setObject:obj forKeyedSubscript:key];
@@ -87,35 +85,31 @@
 }
 
 
-
-
 @end
 
 
 @implementation NSNull (NilSafe)
 
-
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         
-        [NSNull swizzleInstanceMetod:@selector(methodSignatureForSelector:) withSwizzledSel:@selector(gl_methodSignatureForSelector:)];
-        [NSNull swizzleInstanceMetod:@selector(forwardInvocation:) withSwizzledSel:@selector(gl_forwardInvocation:)];
+        [NSNull swizzleInstanceMetod:@selector(methodSignatureForSelector:) withSwizzledSel:@selector(safe_methodSignatureForSelector:)];
+        [NSNull swizzleInstanceMetod:@selector(forwardInvocation:) withSwizzledSel:@selector(safe_forwardInvocation:)];
     });
 }
 
-- (NSMethodSignature *)gl_methodSignatureForSelector:(SEL)aSelector {
-    NSMethodSignature *sig = [self gl_methodSignatureForSelector:aSelector];
+- (NSMethodSignature *)safe_methodSignatureForSelector:(SEL)aSelector {
+    NSMethodSignature *sig = [self safe_methodSignatureForSelector:aSelector];
     if (sig) {
         return sig;
     }
     return [NSMethodSignature signatureWithObjCTypes:@encode(void)];
 }
 
-- (void)gl_forwardInvocation:(NSInvocation *)anInvocation {
+- (void)safe_forwardInvocation:(NSInvocation *)anInvocation {
     NSUInteger returnLength = [[anInvocation methodSignature] methodReturnLength];
     if (!returnLength) {
-        // nothing to do
         return;
     }
     

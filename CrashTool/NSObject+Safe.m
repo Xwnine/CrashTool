@@ -36,8 +36,6 @@
     if (!value) {
         NSLog(@"setValue:forKey: value is nil");
         value = [NSNull null];
-
-//        return;
     }
     [self object_setValue:value forKey:key];
 }
@@ -52,9 +50,7 @@
     
     if (!value) {
         NSLog(@"setValue:forUndefinedKey: value is nil");
-        
         value = [NSNull null];
-//        return;
     }
     [self object_setValue:value forUndefinedKey:key];
 }
