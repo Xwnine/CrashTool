@@ -19,10 +19,9 @@
     dispatch_once(&onceToken, ^{
    
         @autoreleasepool {
-//            [objc_getClass("NSObject") swizzleInstanceMetod:@selector(setValue:forUndefinedKey:) withSwizzledSel:@selector(object_setValue:forUndefinedKey:)];
+            [objc_getClass("NSObject") swizzleInstanceMetod:@selector(setValue:forUndefinedKey:) withSwizzledSel:@selector(object_setValue:forUndefinedKey:)];
             
-//            [objc_getClass("NSObject") swizzleInstanceMetod:@selector(setValue:forKey:) withSwizzledSel:@selector(object_setValue:forKey:)];
-            
+            [objc_getClass("NSObject") swizzleInstanceMetod:@selector(setValue:forKey:) withSwizzledSel:@selector(object_setValue:forKey:)];
             [objc_getClass("NSObject") swizzleInstanceMetod:@selector(forwardingTargetForSelector:) withSwizzledSel:@selector(object_forwardingTargetForSelector:)];
         }
     });
@@ -36,7 +35,9 @@
     }
     if (!value) {
         NSLog(@"setValue:forKey: value is nil");
-        return;
+        value = [NSNull null];
+
+//        return;
     }
     [self object_setValue:value forKey:key];
 }
@@ -51,7 +52,9 @@
     
     if (!value) {
         NSLog(@"setValue:forUndefinedKey: value is nil");
-        return;
+        
+        value = [NSNull null];
+//        return;
     }
     [self object_setValue:value forUndefinedKey:key];
 }

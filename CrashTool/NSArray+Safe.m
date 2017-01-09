@@ -21,8 +21,7 @@
             [objc_getClass("NSArray") swizzleClassMethod:@selector(arrayWithObjects:count:) withSwizzledSel:@selector(array_arrayWithObjects:count:)];
             [objc_getClass("NSArray") swizzleInstanceMetod:@selector(subarrayWithRange:) withSwizzledSel:@selector(array_subarrayWithRange:)];
             [objc_getClass("NSArray") swizzleInstanceMetod:@selector(objectsAtIndexes:) withSwizzledSel:@selector(array_objectsAtIndexes:)];
-            
-            
+        
             [objc_getClass("__NSArrayI") swizzleInstanceMetod:@selector(subarrayWithRange:) withSwizzledSel:@selector(arrayI_subarrayWithRange:)];
             [objc_getClass("__NSArrayI") swizzleInstanceMetod:@selector(objectAtIndex:) withSwizzledSel:@selector(arrayI_objectAtIndex:)];
             
@@ -39,6 +38,9 @@
             [objc_getClass("__NSArrayM") swizzleInstanceMetod:@selector(removeObjectAtIndex:) withSwizzledSel:@selector(arrayM_removeObjectAtIndex:)];
             
 //            [objc_getClass("__NSArrayM") swizzleInstanceMetod:@selector(insertObject:atIndex:) withSwizzledSel:@selector(arrayM_insertObject:atIndex:)];
+            
+            [objc_getClass("__NSArrayM") swizzleInstanceMetod:@selector(addObject:) withSwizzledSel:@selector(arrayM_addObject:)];
+            
         }
     });
 }
@@ -145,33 +147,47 @@
 #pragma mark -- MutableArray 专有
 - (void)arrayM_insertObject:(id)anObject atIndex:(NSUInteger)index {
     
-    if (anObject && index < self.count) {
-        [self arrayM_insertObject:(id)anObject atIndex:index];
-    }else {
+    if (index >= self.count) {
         NSLog(@"arrayM_insertObject:atIndex: index is beyound bounds");
+        return;
+    }
+    
+    if (!anObject) {
+        anObject = [NSNull null];
     }
 
+    [self arrayM_insertObject:(id)anObject atIndex:index];
 }
 
 - (void)arrayM_setObject:(id)obj atIndexedSubscript:(NSUInteger)idx {
     
-    if (obj && idx < self.count) {
-        [self arrayM_setObject:obj atIndexedSubscript:idx];
-    }
-    else {
+    if (idx >= self.count) {
         NSLog(@"arrayM_setObject:atIndexedSubscript: index is beyound bounds");
+        return;
     }
+    
+    if (!obj) {
+        obj = [NSNull null];
+    }
+    [self arrayM_setObject:obj atIndexedSubscript:idx];
+}
+
+- (void)arrayM_addObject:(id)obj {
+
+    if (!obj) {
+        obj = [NSNull null];
+    }
+    [self arrayM_addObject:obj];
 }
 
 - (void)arrayM_removeObjectAtIndex:(NSUInteger)index {
-    
-    if (index < self.count) {
-        [self arrayM_removeObjectAtIndex:index];
-    }
-    else {
-        NSLog(@"arrayM_removeObjectAtIndex: index is beyound bounds");
-    }
 
+    if (index >= self.count) {
+        NSLog(@"arrayM_removeObjectAtIndex: index is beyound bounds");
+        return;
+    }
+    
+    [self arrayM_removeObjectAtIndex:index];
 }
 
 @end
