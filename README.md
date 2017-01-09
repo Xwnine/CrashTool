@@ -2,10 +2,15 @@
 
 解决各种数组越界、字典空值、字符串下标越界等常见Crash解决，实现App保活。
 
+一些小的自省，自己也是会受到网上所谓的大神的这种那种总结的影响，什么swizzle不安全，try...catch...finaly很耗性能，甚至会造成内存泄漏，然后自己也懒得去翻官方的英文文档。在这里也不讨论这些说法到底对不对，周六重新撸了个，实现也挺简单，放在SafeTool文件夹中，喜欢可以查看源码。半天时间写的比较仓促，这个周会完善单元测试用例，欢迎和我交流，共同进步！
 
-利用runtime特性，通过method swizzle，消息转发和try...catch 模型，实现自动规避Crash的工具；
+
+利用runtime特性，通过method swizzle，消息转发实现自动规避Crash的工具。具体代码实现方法有两种，工程中SafeTool文件夹下面的内容中是不用@try...@catch实现的
+
+
+
 使用简单，一行代码就可以实现，同时无需改变现有代码，支持cocoapods方式安装。
-欢迎提问题，欢迎提pr！！！
+
 
 
 日常开发中常见的carsh主要发生在下面一些类：
@@ -85,8 +90,7 @@
 
 	- (id)flee_forwardingTargetForSelector:(SEL)aSelector {
 
-		id proxy = nil;
-		[self flee_forwardingTargetForSelector:aSelector];   
+		id proxy = [self flee_forwardingTargetForSelector:aSelector];
 		if (!proxy) {           
 			NSLog(@"[%@ %@]unrecognized selector crash\n\n%@\n", [self class],      NSStringFromSelector(aSelector), [NSThread callStackSymbols]);        
 		   proxy = [[StubProxy alloc] init];
