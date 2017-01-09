@@ -34,8 +34,7 @@
 
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        [self swizzleInstanceMetod:@selector(pushViewController:animated:) withSwizzledSel:@selector(safe_pushViewController:animated:)];
-        
+        [objc_getClass("UINavigationController") swizzleInstanceMetod:@selector(pushViewController:animated:) withSwizzledSel:@selector(safe_pushViewController:animated:)];
     });
     
     
@@ -113,9 +112,6 @@
     
 }
 
-
-
-
 @end
 
 
@@ -125,7 +121,7 @@
 
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        [self swizzleInstanceMetod:@selector(viewDidAppear:) withSwizzledSel:@selector(safe_viewDidAppear:)];
+        [objc_getClass("UIViewController") swizzleInstanceMetod:@selector(viewDidAppear:) withSwizzledSel:@selector(safe_viewDidAppear:)];
     });
     
 }

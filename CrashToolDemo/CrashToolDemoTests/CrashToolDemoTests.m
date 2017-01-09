@@ -7,7 +7,6 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "CrashTool.h"
 
 @interface CrashToolDemoTests : XCTestCase
 
@@ -27,7 +26,6 @@
 
 - (void)testExample {
    
-    [CrashTool crashToolActive];
 }
 
 - (void)testPerformanceExample {

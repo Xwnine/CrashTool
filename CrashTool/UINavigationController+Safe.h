@@ -1,13 +1,12 @@
 //
-//  NSString+Safe.h
+//  UINavigationController+Safe.h
 //  SafeTool
 //
 //  Created by Andrew on 2017/1/7.
 //  Copyright © 2017年 Andrew. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface NSString (Safe)
-
+@interface UINavigationController (Safe)
 @end

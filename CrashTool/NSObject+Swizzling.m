@@ -50,7 +50,7 @@
             isContain = YES;
         }
         
-        NSLog(@"%s propertyAttributes： %s", propertyName, propertyAttributes);
+//        NSLog(@"%s propertyAttributes： %s", propertyName, propertyAttributes);
     }
     free(properties);
     return isContain;
@@ -71,7 +71,7 @@
         if (filterName == name) {
             isContain = YES;
         }
-        NSLog(@"name: %s encodeType: %s", name, type);
+//        NSLog(@"name: %s encodeType: %s", name, type);
     }
     
     free(ivars);

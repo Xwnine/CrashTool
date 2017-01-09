@@ -7,7 +7,13 @@
 //
 
 #import "AppDelegate.h"
-#import "CrashTool.h"
+
+#import "NSObject+Safe.h"
+#import "NSArray+Safe.h"
+#import "NSAttributedString+Safe.h"
+#import "NSDictionary+Safe.h"
+#import "NSString+Safe.h"
+
 
 @interface AppDelegate ()
 
@@ -17,65 +23,51 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    //也可以单独调用
-    //
-    //    [NSObject crashToolActive];
-    //    [NSString crashToolActive];
-    //    [NSMutableString crashToolActive];
-    //    [NSAttributedString crashToolActive];
-    //    [NSMutableAttributedString crashToolActive];
-    //
-    //    [NSArray crashToolActive];
-    //    [NSMutableArray crashToolActive];
-    //    [NSDictionary crashToolActive];
-    //    [NSMutableDictionary crashToolActive];
-    //    [UINavigationController crashToolActive];
-    
-    
-    [CrashTool crashToolActive];
-    [self NSArray_Test_Instance];
-    
-    [self NSArray_Test_ObjectAtIndex];
-    
-    [self NSArray_Test_ObjectAtIndexes];
-    
-    [self NSArray_Test_getObjectsRange];
+//    
+    [NSObject safeToolActive];
+    [NSDictionary safeToolActive];
+//    [NSArray safeToolActive];
+//    [NSString safeToolActive];
+//    [NSAttributedString safeToolActive];
+//
+//    [self KVC_SetValueForKey];
+//    [self KVC_SetValueForKeyPath];
+//    [self KVC_SetValuesForKeysWithDictionary];
+//    [self KVC_SetNullValueForKey];
+    [self MessageForward_Test_selector];
     
     [self NSDictionary_Test_Instance];
     [self NSMutableDictionary_Test_setObjectForKey];
     [self NSMutableDictionary_Test_removeObjectForKey];
-    [self NSMutableArray_Test_ObjectAtIndex];
-    [self NSMutableArray_Test_setObjetAtIndex];
     
     
-    [self NSMutableArray_Test_InsertObjectAtIndex];
-    [self NSMutableArray_Test_removeObjectAtIndex];
-    [self NSMutableArray_Test_GetObjectRange];
+//    [self NSArray_Test_Instance];
+//    [self NSArray_Test_ObjectAtIndex];
+//    [self NSArray_Test_ObjectAtIndexes];
+
+//    [self NSMutableArray_Test_ObjectAtIndex];
+//    [self NSMutableArray_Test_setObjetAtIndex];
+//    [self NSMutableArray_Test_InsertObjectAtIndex];
+//    [self NSMutableArray_Test_removeObjectAtIndex];
     
-    
-    [self NSString_Test_characterAtIndex];
-    [self NSString_Test_subStringFromIndex];
-    [self NSString_Test_subStringWithRange];
-    [self NSString_Test_stringByReplacingOccurrenesOfString];
-    [self NSString_Test_StringByReplacingOccurrencesOfStringRange];
-    
-    [self NSString_Test_stringReplacingCharactersInRangWithString];
-    [self NSMutableString_Test_replaceCharInRange];
-    
-    [self NSMutableString_Test_InsertStringAtIndex];
-    [self NSMutableString_Test_DeleteCharAtRange];
-    [self NSAttributedString_Test_InitWithString];
-    
-    [self NSAttributeString_Test_InitWithAttributeString];
-    [self NSAttributeString_Test_InitWithStringAttribute];
-    [self NSMutableAttributedString_Test_InitWithString];
-    [self NSMutableAttributedString_Test_InitWithStringAttributes];
-    [self KVC_SetValueForKey];
-    [self KVC_SetValueForKeyPath];
-    [self KVC_SetValuesForKeysWithDictionary];
-    [self KVC_SetNullValueForKey];
-    [self MessageForward_Test_selector];
+////
+//    [self NSString_Test_characterAtIndex];
+//    [self NSString_Test_subStringFromIndex];
+//    [self NSString_Test_subStringWithRange];
+//    [self NSString_Test_stringByReplacingOccurrenesOfString];
+//    [self NSString_Test_StringByReplacingOccurrencesOfStringRange];
+//    [self NSString_Test_stringReplacingCharactersInRangWithString];
+////
+//    [self NSMutableString_Test_replaceCharInRange];
+//    [self NSMutableString_Test_InsertStringAtIndex];
+//    [self NSMutableString_Test_DeleteCharAtRange];
+////
+//    [self NSAttributedString_Test_InitWithString];
+//    [self NSAttributeString_Test_InitWithAttributeString];
+////
+//    [self NSAttributeString_Test_InitWithStringAttribute];
+//    [self NSMutableAttributedString_Test_InitWithString];
+//    [self NSMutableAttributedString_Test_InitWithStringAttributes];
     
     self.window.backgroundColor = [UIColor whiteColor];
     return YES;
@@ -83,7 +75,6 @@
 
 
 #pragma mark -- Test array
-
 - (void)NSArray_Test_Instance {
     
     
@@ -98,10 +89,12 @@
 
 - (void)NSArray_Test_ObjectAtIndex {
     
-    //    NSArray *arr = @[@"iOS", @"Andrew", @"Man"]; //__NSArrayI
-    //    NSArray *arr = @[@"1"];  //__NSSingleObjectArrayI
+    NSArray *arrI = @[@"iOS", @"Andrew", @"Man"]; //__NSArrayI
+    NSArray *oneArrI = @[@"1"];  //__NSSingleObjectArrayI
     NSArray *arr = @[];            //__NSArray0
     NSObject *object = arr[100];
+    object = arrI[100];
+    object = oneArrI[100];
     NSLog(@"object: %@",object);
 }
 
@@ -112,24 +105,9 @@
     NSArray *arr = @[]; //NSArray
     NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:100];
     [arr objectsAtIndexes:indexSet];
+    NSLog(@"arr: %@",arr);
     
 }
-
-- (void)NSArray_Test_getObjectsRange {
-    
-    
-    //    NSArray *arr = @[@"ios", @"Andrew", @"Man"]; //__NSArrayI
-    //    NSArray *arr = @[@"ios"];  //__NSSingleObjectArrayI
-    
-    NSArray *arr = @[]; //NSArrayI
-    NSRange range = NSMakeRange(0, 11);
-    
-    __unsafe_unretained id cArray[range.length];
-    [arr getObjects:cArray range:range];
-}
-
-
-
 
 - (void)NSMutableArray_Test_ObjectAtIndex {
     
@@ -168,16 +146,6 @@
     
 }
 
-- (void)NSMutableArray_Test_GetObjectRange {
-    
-    NSMutableArray *arr = @[@"ios", @"Andrew", @"Man"].mutableCopy;
-    NSRange range = NSMakeRange(0, 15);
-    __unsafe_unretained id cArray[range.length];
-    [arr getObjects:cArray range:range]; //[__NSArrayM getObjects:range:]
-    
-}
-
-
 
 #pragma  mark Test dictionary
 
@@ -203,12 +171,12 @@
 
 - (void)NSMutableDictionary_Test_removeObjectForKey {
     
-    
     //    __NSDictionaryM
     NSMutableDictionary *dict = @{@"name": @"Andrew", @"gender":@"man"}.mutableCopy;
     NSString *ageKey = nil;
     
     [dict removeObjectForKey:ageKey];
+    [dict removeObjectForKey:@"age"];
     NSLog(@"%@",dict);
 }
 
@@ -307,7 +275,7 @@
 - (void)NSAttributeString_Test_InitWithStringAttribute {
     
     NSString *str = nil;
-    NSDictionary *att = @{NSFontAttributeName : [UIFont systemFontOfSize:14]};
+    NSDictionary *att = @{NSFontAttributeName :[UIFont systemFontOfSize:14]};
     NSAttributedString *anotherAttrStr = [[NSAttributedString alloc] initWithString:str attributes:att ]; //'NSConcreteAttributedString initWithString:
     
     
@@ -344,10 +312,9 @@
 }
 
 - (void)KVC_SetNullValueForKey {
-
     id value = nil;
     UIViewController *controller = [UIViewController new]; //setValue:forUndefinedKey:
-    [controller setValue:value forKey:@"flee"];
+    [controller setValue:value forKey:@"view"];
     
 }
 
@@ -366,16 +333,9 @@
 
 
 - (void)MessageForward_Test_selector {
+    
     UIView *obj = [UIView new];
     [obj performSelector:@selector(testCrash)];
-}
-
-
-
-
-- (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
 }
 
 

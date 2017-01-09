@@ -29,7 +29,7 @@
                                 </constraints>
                                 <state key="normal" title="测试连续Push"/>
                                 <connections>
-                                    <action selector="clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wSW-15-fQ7"/>
+                                    <action selector="clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qKf-Ne-3eG"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -1,9 +1,9 @@
 //
 //  StubProxy.h
-//  AndrewOCKit
+//  SafeTool
 //
-//  Created by Andrew on 2016/12/23.
-//  Copyright © 2016年 Andrew. All rights reserved.
+//  Created by Andrew on 2017/1/7.
+//  Copyright © 2017年 Andrew. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
