@@ -13,6 +13,9 @@
 #import "NSAttributedString+Safe.h"
 #import "NSDictionary+Safe.h"
 #import "NSString+Safe.h"
+#import "CrashTool.h"
+
+
 
 
 @interface AppDelegate ()
@@ -24,17 +27,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [NSObject safeToolActive];
-    [NSDictionary safeToolActive];
-    [NSArray safeToolActive];
-    [NSString safeToolActive];
-    [NSAttributedString safeToolActive];
+//    [NSObject safeToolActive];
+//    [NSDictionary safeToolActive];
+//    [NSArray safeToolActive];
+//    [NSString safeToolActive];
+//    [NSAttributedString safeToolActive];
+    
+    [CrashTool crashToolActive];
 
     [self KVC_SetValueForKey];
     [self KVC_SetValueForKeyPath];
     [self KVC_SetValuesForKeysWithDictionary];
     [self KVC_SetNullValueForKey];
-    [self MessageForward_Test_selector];
     
     [self NSDictionary_Test_Instance];
     [self NSMutableDictionary_Test_setObjectForKey];
@@ -330,11 +334,7 @@
 }
 
 
-- (void)MessageForward_Test_selector {
-    
-    UIView *obj = [UIView new];
-    [obj performSelector:@selector(testCrash)];
-}
+
 
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {

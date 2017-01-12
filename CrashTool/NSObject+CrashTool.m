@@ -39,7 +39,7 @@
         [CrashTool swizzleInstanceMetod:@selector(setValue:forUndefinedKey:) withSwizzledSel:@selector(flee_setValue:forKeyUndefineKey:) class:[self class]];
         [CrashTool swizzleInstanceMetod:@selector(setValuesForKeysWithDictionary:) withSwizzledSel:@selector(flee_setValuesForKeysWithDictionary:) class:[self class]];
         
-        [CrashTool swizzleInstanceMetod:@selector(forwardingTargetForSelector:) withSwizzledSel:@selector(flee_forwardingTargetForSelector:) class:[self class]];
+//        [CrashTool swizzleInstanceMetod:@selector(forwardingTargetForSelector:) withSwizzledSel:@selector(flee_forwardingTargetForSelector:) class:[self class]];
     });
 }
 
