@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CrashTool"
-  s.version      = "0.1.4"
+  s.version      = "1.0.1"
   s.summary      = "A avoid crash tool for iOS."
   s.homepage     = "https://github.com/GDAwen/CrashTool"
   s.license      = { :type => "MIT", :file => "LICENSE" }
