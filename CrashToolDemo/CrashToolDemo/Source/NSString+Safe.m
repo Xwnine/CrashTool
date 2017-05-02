@@ -13,10 +13,7 @@
 
 @implementation NSString (Safe)
 
-<<<<<<< HEAD:CrashToolDemo/CrashToolDemo/Source/NSString+Safe.m
-=======
 
->>>>>>> developer:CrashTool/SafeTool/NSString+Safe.m
 + (void)load {
     
     static dispatch_once_t onceToken;
@@ -81,10 +78,9 @@
 #pragma mark -- NSAttributeString
 
 - (unichar)constantStr_characterAtIndex:(NSUInteger)index {
-    unichar character = 0;
     if (index >= self.length) {
         NSLog(@"characterAtInde: index is beyound of bounds: %lu", index);
-        return character;
+        return 0;
     }
     return [self constantStr_characterAtIndex:index];
 }

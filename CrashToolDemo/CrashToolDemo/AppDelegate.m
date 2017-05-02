@@ -132,11 +132,11 @@
 - (void)NSMutableArray_Test_addObjectAtIndex {
     
     NSMutableArray *arr = @[@"ios", @"Andrew", @"Man"].mutableCopy;
-    [arr insertObject:@"cool" atIndex:5]; //实际调用 __NSArrayM insertObject:atIndex:
-//    NSString *nilStr = nil;
+//    [arr insertObject:@"cool" atIndex:5]; //实际调用 __NSArrayM insertObject:atIndex:
+    NSString *nilStr = nil;
 //    [arr insertObject:nilStr atIndex:0];
     
-//    [arr addObject:nilStr];  //__NSArrayM insertObject:atIndex:
+    [arr addObject:nilStr];
     NSLog(@"arr: %@",arr);
 }
 
@@ -333,12 +333,6 @@
 }
 
 
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> developer
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.

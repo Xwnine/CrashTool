@@ -17,24 +17,27 @@
 
 #pragma mark -- objectAtIndex:
 - (id)NSSingleObjectArrayI_objectAtIndex:(NSUInteger)index {
-    
+
     if (index >= self.count) {
+        NSLog(@"NSSingleObjectArrayI_objectAtIndex: index is beyound bounds");
         return nil;
     }
     return [self NSSingleObjectArrayI_objectAtIndex:index];
 }
 
 - (id)array0_objectAtIndex:(NSUInteger)index {
-    
+
     if (index >= self.count) {
+        NSLog(@"array0_objectAtIndex: index is beyound bounds");
         return nil;
     }
     return [self array0_objectAtIndex:index];
 }
 
 - (id)arrayI_objectAtIndex:(NSUInteger)index {
-    
+
     if (index >= self.count) {
+        NSLog(@"arrayI_objectAtIndex: index is beyound bounds");
         return nil;
     }
     return [self arrayI_objectAtIndex:index];
@@ -42,10 +45,12 @@
 
 - (id)arrayM_objectAtIndex:(NSUInteger)index {
     if (index >= self.count) {
+        NSLog(@"arrayM_objectAtIndex: index is beyound bounds");
         return nil;
     }
     return [self arrayM_objectAtIndex:index];
 }
+
 
 
 

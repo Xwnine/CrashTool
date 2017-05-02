@@ -12,7 +12,9 @@
 
 
 @interface UINavigationController () <UINavigationControllerDelegate>
+
 @property (nonatomic, assign) BOOL isTransition;
+
 @end
 
 
@@ -29,6 +31,7 @@
 }
 
 + (void)load {
+
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         [objc_getClass("UINavigationController") swizzleInstanceMetod:@selector(pushViewController:animated:) withSwizzledSel:@selector(safe_pushViewController:animated:)];

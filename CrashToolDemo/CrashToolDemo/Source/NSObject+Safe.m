@@ -13,10 +13,7 @@
 @implementation NSObject (Safe)
 
 + (void)load {
-<<<<<<< HEAD:CrashToolDemo/CrashToolDemo/Source/NSObject+Safe.m
-=======
 
->>>>>>> developer:CrashTool/SafeTool/NSObject+Safe.m
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         @autoreleasepool {
@@ -34,7 +31,7 @@
     }
     if (!value) {
         NSLog(@"setValue:forKey: value is nil");
-//        value = [NSNull null];
+        value = [NSNull null];
     }
     [self object_setValue:value forKey:key];
 }
@@ -49,16 +46,13 @@
     
     if (!value) {
         NSLog(@"setValue:forUndefinedKey: value is nil");
-//        value = [NSNull null];
+        value = [NSNull null];
     }
     [self object_setValue:value forUndefinedKey:key];
 }
 
 
-<<<<<<< HEAD:CrashToolDemo/CrashToolDemo/Source/NSObject+Safe.m
-=======
 
->>>>>>> developer:CrashTool/SafeTool/NSObject+Safe.m
 
 
 @end
