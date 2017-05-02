@@ -1,5 +1,5 @@
 //
-//  NSAttributedString+Safe.h
+//  NSArray+Safe.h
 //  SafeTool
 //
 //  Created by Andrew on 2017/1/7.
@@ -8,6 +8,5 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSAttributedString (Safe)
-+ (void)safeToolActive;
+@interface NSArray (Safe)
 @end

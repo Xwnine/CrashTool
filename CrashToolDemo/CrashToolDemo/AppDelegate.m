@@ -8,12 +8,6 @@
 
 #import "AppDelegate.h"
 
-#import "NSObject+Safe.h"
-#import "NSArray+Safe.h"
-#import "NSAttributedString+Safe.h"
-#import "NSDictionary+Safe.h"
-#import "NSString+Safe.h"
-#import "CrashTool.h"
 
 
 
@@ -27,51 +21,45 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-//    [NSObject safeToolActive];
-//    [NSDictionary safeToolActive];
-//    [NSArray safeToolActive];
-//    [NSString safeToolActive];
-//    [NSAttributedString safeToolActive];
-    
-    [CrashTool crashToolActive];
-
-    [self KVC_SetValueForKey];
-    [self KVC_SetValueForKeyPath];
-    [self KVC_SetValuesForKeysWithDictionary];
-    [self KVC_SetNullValueForKey];
-    
-    [self NSDictionary_Test_Instance];
-    [self NSMutableDictionary_Test_setObjectForKey];
-    [self NSMutableDictionary_Test_removeObjectForKey];
-    
-    
-    [self NSArray_Test_Instance];
-    [self NSArray_Test_ObjectAtIndex];
-    [self NSArray_Test_ObjectAtIndexes];
-
-    [self NSMutableArray_Test_ObjectAtIndex];
-    [self NSMutableArray_Test_setObjetAtIndex];
-    [self NSMutableArray_Test_addObjectAtIndex];
-    [self NSMutableArray_Test_removeObjectAtIndex];
     
 
-    [self NSString_Test_characterAtIndex];
-    [self NSString_Test_subStringFromIndex];
-    [self NSString_Test_subStringWithRange];
-    [self NSString_Test_stringByReplacingOccurrenesOfString];
-    [self NSString_Test_StringByReplacingOccurrencesOfStringRange];
-    [self NSString_Test_stringReplacingCharactersInRangWithString];
+//    [self KVC_SetValueForKey];
+//    [self KVC_SetValueForKeyPath];
+//    [self KVC_SetValuesForKeysWithDictionary];
+//    [self KVC_SetNullValueForKey];
+    
+//    [self NSDictionary_Test_Instance];
+//    [self NSMutableDictionary_Test_setObjectForKey];
+//    [self NSMutableDictionary_Test_removeObjectForKey];
+    
+    
+//    [self NSArray_Test_Instance];
+//    [self NSArray_Test_ObjectAtIndex];
+//    [self NSArray_Test_ObjectAtIndexes];
 
-    [self NSMutableString_Test_replaceCharInRange];
-    [self NSMutableString_Test_InsertStringAtIndex];
-    [self NSMutableString_Test_DeleteCharAtRange];
-
-    [self NSAttributedString_Test_InitWithString];
-    [self NSAttributeString_Test_InitWithAttributeString];
-
-    [self NSAttributeString_Test_InitWithStringAttribute];
-    [self NSMutableAttributedString_Test_InitWithString];
-    [self NSMutableAttributedString_Test_InitWithStringAttributes];
+//    [self NSMutableArray_Test_ObjectAtIndex];
+//    [self NSMutableArray_Test_setObjetAtIndex];
+//    [self NSMutableArray_Test_addObjectAtIndex];
+//    [self NSMutableArray_Test_removeObjectAtIndex];
+//
+//
+//    [self NSString_Test_characterAtIndex];
+//    [self NSString_Test_subStringFromIndex];
+//    [self NSString_Test_subStringWithRange];
+//    [self NSString_Test_stringByReplacingOccurrenesOfString];
+//    [self NSString_Test_StringByReplacingOccurrencesOfStringRange];
+//    [self NSString_Test_stringReplacingCharactersInRangWithString];
+//
+//    [self NSMutableString_Test_replaceCharInRange];
+//    [self NSMutableString_Test_InsertStringAtIndex];
+//    [self NSMutableString_Test_DeleteCharAtRange];
+//
+//    [self NSAttributedString_Test_InitWithString];
+//    [self NSAttributeString_Test_InitWithAttributeString];
+//
+//    [self NSAttributeString_Test_InitWithStringAttribute];
+//    [self NSMutableAttributedString_Test_InitWithString];
+//    [self NSMutableAttributedString_Test_InitWithStringAttributes];
     
     self.window.backgroundColor = [UIColor whiteColor];
     return YES;
@@ -133,11 +121,11 @@
 - (void)NSMutableArray_Test_addObjectAtIndex {
     
     NSMutableArray *arr = @[@"ios", @"Andrew", @"Man"].mutableCopy;
-//    [arr insertObject:@"cool" atIndex:5]; //实际调用 __NSArrayM insertObject:atIndex:
-    NSString *nilStr = nil;
+    [arr insertObject:@"cool" atIndex:5]; //实际调用 __NSArrayM insertObject:atIndex:
+//    NSString *nilStr = nil;
 //    [arr insertObject:nilStr atIndex:0];
     
-    [arr addObject:nilStr];  //__NSArrayM insertObject:atIndex:
+//    [arr addObject:nilStr];  //__NSArrayM insertObject:atIndex:
     NSLog(@"arr: %@",arr);
 }
 

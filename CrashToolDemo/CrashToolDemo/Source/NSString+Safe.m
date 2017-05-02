@@ -13,8 +13,7 @@
 
 @implementation NSString (Safe)
 
-
-+ (void)safeToolActive {
++ (void)load {
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -78,7 +77,7 @@
 #pragma mark -- NSAttributeString
 
 - (unichar)constantStr_characterAtIndex:(NSUInteger)index {
-    unichar character;
+    unichar character = 0;
     if (index >= self.length) {
         NSLog(@"characterAtInde: index is beyound of bounds: %lu", index);
         return character;

@@ -12,16 +12,14 @@
 
 @implementation NSDictionary (Safe)
 
-+ (void)safeToolActive {
++ (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         @autoreleasepool {
-            
             [objc_getClass("__NSDictionaryI") swizzleClassMethod:@selector(dictionaryWithObjects:forKeys:count:) withSwizzledSel:@selector(dictionaryI_dictionaryWithObjects:forKeys:count:)];
             
             [objc_getClass("__NSDictionaryM") swizzleInstanceMetod:@selector(setObject:forKey:) withSwizzledSel:@selector(dictionaryM_setObject:forKey:)];
             [objc_getClass("__NSDictionaryM") swizzleInstanceMetod:@selector(setObject:forKeyedSubscript:) withSwizzledSel:@selector(dictionaryM_setObject:forKeyedSubscript:)];
-            
             [objc_getClass("__NSDictionaryM") swizzleInstanceMetod:@selector(removeObjectForKey:) withSwizzledSel:@selector(dictionaryM_removeObjectForKey:)];
         }
     });
@@ -47,13 +45,11 @@
 - (void)dictionaryM_setObject:(id)anObject forKey:(id)aKey {
     
     if (!aKey) {
-        NSLog(@"safe_setObject:forKey: aKey is nil");
         return;
     }
     
     if (!anObject) {
-        NSLog(@"safe_setObject:forKey:set a nil Object for %@", anObject);
-        anObject = [NSNull null];
+        return;
     }
     
     [self dictionaryM_setObject:anObject forKey:aKey];
@@ -62,13 +58,11 @@
 - (void)dictionaryM_setObject:(id)obj forKeyedSubscript:(id)key {
 
     if (!key) {
-        NSLog(@"safe_setObject:forKey: Key is nil");
         return;
     }
     
     if (!obj) {
-        NSLog(@"safe_setObject:forKey:set a nil Object for %@", obj);
-        obj = [NSNull null];
+        return;
     }
     
     [self dictionaryM_setObject:obj forKeyedSubscript:key];
@@ -78,7 +72,6 @@
 - (void)dictionaryM_removeObjectForKey:(id)aKey {
     
     if (!aKey) {
-        NSLog(@"safe_removeObjectForKey: aKey is nil");
         return;
     }
     [self dictionaryM_removeObjectForKey:aKey];
@@ -93,7 +86,6 @@
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        
         [NSNull swizzleInstanceMetod:@selector(methodSignatureForSelector:) withSwizzledSel:@selector(safe_methodSignatureForSelector:)];
         [NSNull swizzleInstanceMetod:@selector(forwardInvocation:) withSwizzledSel:@selector(safe_forwardInvocation:)];
     });

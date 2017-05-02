@@ -45,12 +45,9 @@
         objc_property_t property = properties[i];
         
         const char *propertyName = property_getName(property);
-//        const char *propertyAttributes = property_getAttributes(property);
         if (filterName == propertyName) {
             isContain = YES;
         }
-        
-//        NSLog(@"%s propertyAttributes： %s", propertyName, propertyAttributes);
     }
     free(properties);
     return isContain;
@@ -67,11 +64,9 @@
     for (unsigned int i = 0; i < outCount; ++i) {
         Ivar ivar = ivars[i];
         const char *name = ivar_getName(ivar);
-//        const char *type = ivar_getTypeEncoding(ivar);
         if (filterName == name) {
             isContain = YES;
         }
-//        NSLog(@"name: %s encodeType: %s", name, type);
     }
     
     free(ivars);

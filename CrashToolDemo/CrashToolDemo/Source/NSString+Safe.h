@@ -1,5 +1,5 @@
 //
-//  StubProxy.h
+//  NSString+Safe.h
 //  SafeTool
 //
 //  Created by Andrew on 2017/1/7.
@@ -8,6 +8,5 @@
 
 #import <Foundation/Foundation.h>
 
-@interface StubProxy : NSObject
-
+@interface NSString (Safe)
 @end

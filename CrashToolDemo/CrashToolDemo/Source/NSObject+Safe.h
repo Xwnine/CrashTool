@@ -1,5 +1,5 @@
 //
-//  NSString+Safe.h
+//  NSObject+Safe.h
 //  SafeTool
 //
 //  Created by Andrew on 2017/1/7.
@@ -8,6 +8,5 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (Safe)
-+ (void)safeToolActive;
+@interface NSObject (Safe)
 @end
