@@ -7,7 +7,12 @@
 //
 
 #import "AppDelegate.h"
-
+#import "NSObject+Safe.h"
+#import "NSArray+Safe.h"
+#import "NSAttributedString+Safe.h"
+#import "NSDictionary+Safe.h"
+#import "NSString+Safe.h"
+#import "UINavigationController+Safe.h"
 
 
 
@@ -21,45 +26,51 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+
+    [self KVC_SetValueForKey];
+    [self KVC_SetValueForKeyPath];
+    [self KVC_SetValuesForKeysWithDictionary];
+    [self KVC_SetNullValueForKey];
+
     
 
-//    [self KVC_SetValueForKey];
-//    [self KVC_SetValueForKeyPath];
-//    [self KVC_SetValuesForKeysWithDictionary];
-//    [self KVC_SetNullValueForKey];
+    [self KVC_SetValueForKey];
+    [self KVC_SetValueForKeyPath];
+    [self KVC_SetValuesForKeysWithDictionary];
+    [self KVC_SetNullValueForKey];
     
-//    [self NSDictionary_Test_Instance];
-//    [self NSMutableDictionary_Test_setObjectForKey];
-//    [self NSMutableDictionary_Test_removeObjectForKey];
+    [self NSDictionary_Test_Instance];
+    [self NSMutableDictionary_Test_setObjectForKey];
+    [self NSMutableDictionary_Test_removeObjectForKey];
     
     
-//    [self NSArray_Test_Instance];
-//    [self NSArray_Test_ObjectAtIndex];
-//    [self NSArray_Test_ObjectAtIndexes];
+    [self NSArray_Test_Instance];
+    [self NSArray_Test_ObjectAtIndex];
+    [self NSArray_Test_ObjectAtIndexes];
 
-//    [self NSMutableArray_Test_ObjectAtIndex];
-//    [self NSMutableArray_Test_setObjetAtIndex];
-//    [self NSMutableArray_Test_addObjectAtIndex];
-//    [self NSMutableArray_Test_removeObjectAtIndex];
-//
-//
-//    [self NSString_Test_characterAtIndex];
-//    [self NSString_Test_subStringFromIndex];
-//    [self NSString_Test_subStringWithRange];
-//    [self NSString_Test_stringByReplacingOccurrenesOfString];
-//    [self NSString_Test_StringByReplacingOccurrencesOfStringRange];
-//    [self NSString_Test_stringReplacingCharactersInRangWithString];
-//
-//    [self NSMutableString_Test_replaceCharInRange];
-//    [self NSMutableString_Test_InsertStringAtIndex];
-//    [self NSMutableString_Test_DeleteCharAtRange];
-//
-//    [self NSAttributedString_Test_InitWithString];
-//    [self NSAttributeString_Test_InitWithAttributeString];
-//
-//    [self NSAttributeString_Test_InitWithStringAttribute];
-//    [self NSMutableAttributedString_Test_InitWithString];
-//    [self NSMutableAttributedString_Test_InitWithStringAttributes];
+    [self NSMutableArray_Test_ObjectAtIndex];
+    [self NSMutableArray_Test_setObjetAtIndex];
+    [self NSMutableArray_Test_addObjectAtIndex];
+    [self NSMutableArray_Test_removeObjectAtIndex];
+
+
+    [self NSString_Test_characterAtIndex];
+    [self NSString_Test_subStringFromIndex];
+    [self NSString_Test_subStringWithRange];
+    [self NSString_Test_stringByReplacingOccurrenesOfString];
+    [self NSString_Test_StringByReplacingOccurrencesOfStringRange];
+    [self NSString_Test_stringReplacingCharactersInRangWithString];
+
+    [self NSMutableString_Test_replaceCharInRange];
+    [self NSMutableString_Test_InsertStringAtIndex];
+    [self NSMutableString_Test_DeleteCharAtRange];
+
+    [self NSAttributedString_Test_InitWithString];
+    [self NSAttributeString_Test_InitWithAttributeString];
+
+    [self NSAttributeString_Test_InitWithStringAttribute];
+    [self NSMutableAttributedString_Test_InitWithString];
+    [self NSMutableAttributedString_Test_InitWithStringAttributes];
     
     self.window.backgroundColor = [UIColor whiteColor];
     return YES;
@@ -322,9 +333,12 @@
 }
 
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> developer
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.

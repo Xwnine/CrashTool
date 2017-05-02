@@ -13,6 +13,10 @@
 @implementation NSObject (Safe)
 
 + (void)load {
+<<<<<<< HEAD:CrashToolDemo/CrashToolDemo/Source/NSObject+Safe.m
+=======
+
+>>>>>>> developer:CrashTool/SafeTool/NSObject+Safe.m
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         @autoreleasepool {
@@ -51,6 +55,10 @@
 }
 
 
+<<<<<<< HEAD:CrashToolDemo/CrashToolDemo/Source/NSObject+Safe.m
+=======
+
+>>>>>>> developer:CrashTool/SafeTool/NSObject+Safe.m
 
 
 @end

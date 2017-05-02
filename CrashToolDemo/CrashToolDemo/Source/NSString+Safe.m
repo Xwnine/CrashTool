@@ -13,6 +13,10 @@
 
 @implementation NSString (Safe)
 
+<<<<<<< HEAD:CrashToolDemo/CrashToolDemo/Source/NSString+Safe.m
+=======
+
+>>>>>>> developer:CrashTool/SafeTool/NSString+Safe.m
 + (void)load {
     
     static dispatch_once_t onceToken;
