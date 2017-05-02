@@ -22,18 +22,6 @@
 		49E682771E2383E6002E556E /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E6825F1E2383E6002E556E /* NSObject+Swizzling.m */; };
 		49E682781E2383E6002E556E /* NSString+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E682611E2383E6002E556E /* NSString+Safe.m */; };
 		49E682791E2383E6002E556E /* UINavigationController+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E682631E2383E6002E556E /* UINavigationController+Safe.m */; };
-		49E6827A1E2383E6002E556E /* StubProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E682651E2383E6002E556E /* StubProxy.m */; };
-		49E682921E2384BC002E556E /* CrashTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E6827D1E2384BB002E556E /* CrashTool.m */; };
-		49E682931E2384BC002E556E /* NSArray+CrashTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E6827F1E2384BB002E556E /* NSArray+CrashTool.m */; };
-		49E682941E2384BC002E556E /* NSAttributedString+CrashTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E682811E2384BC002E556E /* NSAttributedString+CrashTool.m */; };
-		49E682951E2384BC002E556E /* NSDictionary+CrashTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E682831E2384BC002E556E /* NSDictionary+CrashTool.m */; };
-		49E682961E2384BC002E556E /* NSMutableArray+CrashTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E682851E2384BC002E556E /* NSMutableArray+CrashTool.m */; };
-		49E682971E2384BC002E556E /* NSMutableAttributedString+CrashTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E682871E2384BC002E556E /* NSMutableAttributedString+CrashTool.m */; };
-		49E682981E2384BC002E556E /* NSMutableDictionary+CrashTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E682891E2384BC002E556E /* NSMutableDictionary+CrashTool.m */; };
-		49E682991E2384BC002E556E /* NSMutableString+CrashTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E6828B1E2384BC002E556E /* NSMutableString+CrashTool.m */; };
-		49E6829A1E2384BC002E556E /* NSObject+CrashTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E6828D1E2384BC002E556E /* NSObject+CrashTool.m */; };
-		49E6829B1E2384BC002E556E /* NSString+CrashTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E6828F1E2384BC002E556E /* NSString+CrashTool.m */; };
-		49E6829C1E2384BC002E556E /* UINavigationController+CrashTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E682911E2384BC002E556E /* UINavigationController+CrashTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,30 +72,6 @@
 		49E682611E2383E6002E556E /* NSString+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Safe.m"; sourceTree = "<group>"; };
 		49E682621E2383E6002E556E /* UINavigationController+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Safe.h"; sourceTree = "<group>"; };
 		49E682631E2383E6002E556E /* UINavigationController+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Safe.m"; sourceTree = "<group>"; };
-		49E682641E2383E6002E556E /* StubProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StubProxy.h; sourceTree = "<group>"; };
-		49E682651E2383E6002E556E /* StubProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StubProxy.m; sourceTree = "<group>"; };
-		49E6827C1E2384BB002E556E /* CrashTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashTool.h; sourceTree = "<group>"; };
-		49E6827D1E2384BB002E556E /* CrashTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashTool.m; sourceTree = "<group>"; };
-		49E6827E1E2384BB002E556E /* NSArray+CrashTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CrashTool.h"; sourceTree = "<group>"; };
-		49E6827F1E2384BB002E556E /* NSArray+CrashTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CrashTool.m"; sourceTree = "<group>"; };
-		49E682801E2384BC002E556E /* NSAttributedString+CrashTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+CrashTool.h"; sourceTree = "<group>"; };
-		49E682811E2384BC002E556E /* NSAttributedString+CrashTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+CrashTool.m"; sourceTree = "<group>"; };
-		49E682821E2384BC002E556E /* NSDictionary+CrashTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CrashTool.h"; sourceTree = "<group>"; };
-		49E682831E2384BC002E556E /* NSDictionary+CrashTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CrashTool.m"; sourceTree = "<group>"; };
-		49E682841E2384BC002E556E /* NSMutableArray+CrashTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+CrashTool.h"; sourceTree = "<group>"; };
-		49E682851E2384BC002E556E /* NSMutableArray+CrashTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+CrashTool.m"; sourceTree = "<group>"; };
-		49E682861E2384BC002E556E /* NSMutableAttributedString+CrashTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+CrashTool.h"; sourceTree = "<group>"; };
-		49E682871E2384BC002E556E /* NSMutableAttributedString+CrashTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+CrashTool.m"; sourceTree = "<group>"; };
-		49E682881E2384BC002E556E /* NSMutableDictionary+CrashTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+CrashTool.h"; sourceTree = "<group>"; };
-		49E682891E2384BC002E556E /* NSMutableDictionary+CrashTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+CrashTool.m"; sourceTree = "<group>"; };
-		49E6828A1E2384BC002E556E /* NSMutableString+CrashTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+CrashTool.h"; sourceTree = "<group>"; };
-		49E6828B1E2384BC002E556E /* NSMutableString+CrashTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+CrashTool.m"; sourceTree = "<group>"; };
-		49E6828C1E2384BC002E556E /* NSObject+CrashTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CrashTool.h"; sourceTree = "<group>"; };
-		49E6828D1E2384BC002E556E /* NSObject+CrashTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CrashTool.m"; sourceTree = "<group>"; };
-		49E6828E1E2384BC002E556E /* NSString+CrashTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CrashTool.h"; sourceTree = "<group>"; };
-		49E6828F1E2384BC002E556E /* NSString+CrashTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CrashTool.m"; sourceTree = "<group>"; };
-		49E682901E2384BC002E556E /* UINavigationController+CrashTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+CrashTool.h"; sourceTree = "<group>"; };
-		49E682911E2384BC002E556E /* UINavigationController+CrashTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+CrashTool.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,30 +165,6 @@
 		49E682401E2383E6002E556E /* CrashTool */ = {
 			isa = PBXGroup;
 			children = (
-				49E6827C1E2384BB002E556E /* CrashTool.h */,
-				49E6827D1E2384BB002E556E /* CrashTool.m */,
-				49E6827E1E2384BB002E556E /* NSArray+CrashTool.h */,
-				49E6827F1E2384BB002E556E /* NSArray+CrashTool.m */,
-				49E682801E2384BC002E556E /* NSAttributedString+CrashTool.h */,
-				49E682811E2384BC002E556E /* NSAttributedString+CrashTool.m */,
-				49E682821E2384BC002E556E /* NSDictionary+CrashTool.h */,
-				49E682831E2384BC002E556E /* NSDictionary+CrashTool.m */,
-				49E682841E2384BC002E556E /* NSMutableArray+CrashTool.h */,
-				49E682851E2384BC002E556E /* NSMutableArray+CrashTool.m */,
-				49E682861E2384BC002E556E /* NSMutableAttributedString+CrashTool.h */,
-				49E682871E2384BC002E556E /* NSMutableAttributedString+CrashTool.m */,
-				49E682881E2384BC002E556E /* NSMutableDictionary+CrashTool.h */,
-				49E682891E2384BC002E556E /* NSMutableDictionary+CrashTool.m */,
-				49E6828A1E2384BC002E556E /* NSMutableString+CrashTool.h */,
-				49E6828B1E2384BC002E556E /* NSMutableString+CrashTool.m */,
-				49E6828C1E2384BC002E556E /* NSObject+CrashTool.h */,
-				49E6828D1E2384BC002E556E /* NSObject+CrashTool.m */,
-				49E6828E1E2384BC002E556E /* NSString+CrashTool.h */,
-				49E6828F1E2384BC002E556E /* NSString+CrashTool.m */,
-				49E682901E2384BC002E556E /* UINavigationController+CrashTool.h */,
-				49E682911E2384BC002E556E /* UINavigationController+CrashTool.m */,
-				49E682641E2383E6002E556E /* StubProxy.h */,
-				49E682651E2383E6002E556E /* StubProxy.m */,
 				49E682551E2383E6002E556E /* SafeTool */,
 			);
 			name = CrashTool;
@@ -386,27 +326,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				496DB6D11E1FBC7E00FE2387 /* ViewController.m in Sources */,
-				49E6829A1E2384BC002E556E /* NSObject+CrashTool.m in Sources */,
-				49E682991E2384BC002E556E /* NSMutableString+CrashTool.m in Sources */,
-				49E682921E2384BC002E556E /* CrashTool.m in Sources */,
 				49E682731E2383E6002E556E /* NSArray+Safe.m in Sources */,
-				49E682971E2384BC002E556E /* NSMutableAttributedString+CrashTool.m in Sources */,
-				49E6827A1E2383E6002E556E /* StubProxy.m in Sources */,
 				49E682761E2383E6002E556E /* NSObject+Safe.m in Sources */,
 				49E682771E2383E6002E556E /* NSObject+Swizzling.m in Sources */,
-				49E682951E2384BC002E556E /* NSDictionary+CrashTool.m in Sources */,
 				496DB6CE1E1FBC7E00FE2387 /* AppDelegate.m in Sources */,
-				49E682981E2384BC002E556E /* NSMutableDictionary+CrashTool.m in Sources */,
-				49E682941E2384BC002E556E /* NSAttributedString+CrashTool.m in Sources */,
-				49E6829C1E2384BC002E556E /* UINavigationController+CrashTool.m in Sources */,
-				49E682961E2384BC002E556E /* NSMutableArray+CrashTool.m in Sources */,
-				49E682931E2384BC002E556E /* NSArray+CrashTool.m in Sources */,
 				49E682781E2383E6002E556E /* NSString+Safe.m in Sources */,
 				49E682791E2383E6002E556E /* UINavigationController+Safe.m in Sources */,
 				496DB6CB1E1FBC7E00FE2387 /* main.m in Sources */,
 				49E682741E2383E6002E556E /* NSAttributedString+Safe.m in Sources */,
 				49E682751E2383E6002E556E /* NSDictionary+Safe.m in Sources */,
-				49E6829B1E2384BC002E556E /* NSString+CrashTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

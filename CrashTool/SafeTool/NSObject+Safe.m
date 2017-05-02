@@ -7,22 +7,18 @@
 //
 
 #import "NSObject+Safe.h"
-#import "StubProxy.h"
 #import "NSObject+Swizzling.h"
 #import <objc/runtime.h>
 
 @implementation NSObject (Safe)
 
-+ (void)safeToolActive {
++ (void)load {
 
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-   
         @autoreleasepool {
             [objc_getClass("NSObject") swizzleInstanceMetod:@selector(setValue:forUndefinedKey:) withSwizzledSel:@selector(object_setValue:forUndefinedKey:)];
-            
             [objc_getClass("NSObject") swizzleInstanceMetod:@selector(setValue:forKey:) withSwizzledSel:@selector(object_setValue:forKey:)];
-            [objc_getClass("NSObject") swizzleInstanceMetod:@selector(forwardingTargetForSelector:) withSwizzledSel:@selector(object_forwardingTargetForSelector:)];
         }
     });
 }
@@ -55,16 +51,6 @@
     [self object_setValue:value forUndefinedKey:key];
 }
 
-
-- (id)object_forwardingTargetForSelector:(SEL)aSelector {
-
-    id proxy = [self object_forwardingTargetForSelector:aSelector];
-    if (!proxy) {
-        NSLog(@"[%@ %@]unrecognized selector crash\n\n%@\n", [self class], NSStringFromSelector(aSelector), [NSThread callStackSymbols]);
-        proxy = [[StubProxy alloc] init];
-    }
-    return proxy;
-}
 
 
 

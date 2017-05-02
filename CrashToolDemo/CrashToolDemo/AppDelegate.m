@@ -13,6 +13,9 @@
 #import "NSAttributedString+Safe.h"
 #import "NSDictionary+Safe.h"
 #import "NSString+Safe.h"
+#import "UINavigationController+Safe.h"
+
+
 
 
 @interface AppDelegate ()
@@ -24,17 +27,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [NSObject safeToolActive];
-    [NSDictionary safeToolActive];
-    [NSArray safeToolActive];
-    [NSString safeToolActive];
-    [NSAttributedString safeToolActive];
-
     [self KVC_SetValueForKey];
     [self KVC_SetValueForKeyPath];
     [self KVC_SetValuesForKeysWithDictionary];
     [self KVC_SetNullValueForKey];
-    [self MessageForward_Test_selector];
     
     [self NSDictionary_Test_Instance];
     [self NSMutableDictionary_Test_setObjectForKey];
@@ -327,13 +323,6 @@
 - (void)KVC_SetValuesForKeysWithDictionary {
     UIViewController *vc = [UIViewController new];
     [vc setValuesForKeysWithDictionary:@{@"name": @"Andrew"}]; //setValue:forUndefinedKey:
-}
-
-
-- (void)MessageForward_Test_selector {
-    
-    UIView *obj = [UIView new];
-    [obj performSelector:@selector(testCrash)];
 }
 
 

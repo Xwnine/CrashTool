@@ -9,5 +9,4 @@
 #import <Foundation/Foundation.h>
 
 @interface NSString (Safe)
-+ (void)safeToolActive;
 @end

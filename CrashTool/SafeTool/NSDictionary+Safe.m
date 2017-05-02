@@ -12,7 +12,7 @@
 
 @implementation NSDictionary (Safe)
 
-+ (void)safeToolActive {
++ (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         @autoreleasepool {
@@ -93,7 +93,6 @@
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        
         [NSNull swizzleInstanceMetod:@selector(methodSignatureForSelector:) withSwizzledSel:@selector(safe_methodSignatureForSelector:)];
         [NSNull swizzleInstanceMetod:@selector(forwardInvocation:) withSwizzledSel:@selector(safe_forwardInvocation:)];
     });

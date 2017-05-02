@@ -12,7 +12,7 @@
 
 @implementation NSArray (Safe)
 
-+ (void)safeToolActive {
++ (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
        
