@@ -2,11 +2,10 @@
 
 解决各种数组越界、字典空值、字符串下标越界等常见Crash解决，实现App保活。
 
-利用runtime特性，通过method swizzle，消息转发实现自动规避Crash的工具。使用简单，一行代码就可以实现，同时无需改变现有代码。如果你愿意，也可以修改源码，将method exchange的代码放到category的load方法中。
+利用runtime特性，实现常见Crash规避，实现思路很简单，具体请看源码。单元测试较完整，经过一段时间的测试和修改，决定将method exchange的代码放到category的load方法中，使用的时候无需再添加任何代码。最新的commit，去掉了之前try_catch_finaly 的代码。
 
 
 
-网上有大神说，什么swizzle不安全，try...catch...finaly很耗性能，甚至会造成内存泄漏，很多人也会人云亦云，老实说也自己也没去翻官方的英文文档，在这里也不讨论这些说法到底对不对。为了解决小伙伴们的困惑，周六重新撸了一个。源码放在SafeTool文件夹中，实现也挺简单，喜欢可以下载整个工程查看。半天时间写的比较仓促，这个周会完善单元测试用例，欢迎和我交流，共同进步！
 
 
 
@@ -27,7 +26,8 @@ CocoaPods
 手动安装
 
 	下载 CrashTool 文件夹内的所有内容。
-	将 CrashTool 内的源文件添加(拖放)到你的工程。
+	将 CrashTool 内的源文件添加(拖放)到你的工程，给NSMutableArray+SafeMRC文件添加 -fno-objc-arc标志。
+	
 
 
 
@@ -78,8 +78,9 @@ CocoaPods
   
 六：NSMutableString字符串：
 
+
 	1.- (void)replaceCharactersInRange:(NSRange)range withString:(NSString *)aString;
-	2.- (void)insertString:(NSString *)aString atIndex:(NSUInteger)loc;
+	.- (void)insertString:(NSString *)aString atIndex:(NSUInteger)loc;
 	3.- (void)deleteCharactersInRange:(NSRange)range;
 
 
@@ -103,36 +104,12 @@ CocoaPods
 	3.- (void)setValue:(id)value forUndefinedKey:(NSString *)key //这个方法一般用来重写，不会主动调用
 	4.- (void)setValuesForKeysWithDictionary:(NSDictionary<NSString *,id> *)keyedValues
 	5.- (void)forwardingTargetForSelector:(SEL)aSelector;
+		
 
-十：解决 unrecognized selector sent to instance 0xxx，利用消息转发机制实现：
-
-	- (id)flee_forwardingTargetForSelector:(SEL)aSelector {
-
-		id proxy = [self flee_forwardingTargetForSelector:aSelector];
-		if (!proxy) {           
-			NSLog(@"[%@ %@]unrecognized selector crash\n\n%@\n", [self class],      NSStringFromSelector(aSelector), [NSThread callStackSymbols]);        
-		   proxy = [[StubProxy alloc] init];
-		  }       
-		  return proxy; 
-	}
-	
-	
-
-十一：解决Bugly上报的错误：Can't add self as subview：
+十：解决Bugly上报的错误：Can't add self as subview：
 
 	这个主要是在push或pop一个视图的时候，并且设置了animated:YES，如果此时动画(animated)还没有完成，这个时候，你在去push或pop另外一个视图的时候，就会造成该异常
 
-
-使用方式：
-
-	方式1：git clone 整个工程，将CrashTool路径下的所有文件手动拖到你的工程中
-	方式2：CocoaPods: 添加 pod 'CrashTool', '~> 1.0' 到你的 Podfile，然后执行pod install 或者pod update
-
-之所以没有将方法交换写在load方法中有几个方面的原因：
-
-	1、swizzle技术影响到整个OS框架，为了规避测试力度不够导致的各类离奇的bug，以及旧代码用到新工程中出现的各种位置的错误
-	2、使用可控
-	3、应对新的iOS系统发布，系统框架的更新导致一些API发生变化，所交换的方法不存在，导致未知的bug
 
 
 还未实现的功能：EXC_BAD_ACCESS（野指针）：
