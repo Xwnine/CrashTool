@@ -7,30 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		49451DDC1EB8667500BBE658 /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 49451DCD1EB8667500BBE658 /* NSArray+Safe.m */; };
-		49451DDD1EB8667500BBE658 /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 49451DCD1EB8667500BBE658 /* NSArray+Safe.m */; };
-		49451DDE1EB8667500BBE658 /* NSArray+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 49451DCD1EB8667500BBE658 /* NSArray+Safe.m */; };
-		49451DDF1EB8667500BBE658 /* NSArray+SafeMRC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49451DCF1EB8667500BBE658 /* NSArray+SafeMRC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		49451DE01EB8667500BBE658 /* NSArray+SafeMRC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49451DCF1EB8667500BBE658 /* NSArray+SafeMRC.m */; };
-		49451DE11EB8667500BBE658 /* NSArray+SafeMRC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49451DCF1EB8667500BBE658 /* NSArray+SafeMRC.m */; };
-		49451DE21EB8667500BBE658 /* NSAttributedString+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 49451DD11EB8667500BBE658 /* NSAttributedString+Safe.m */; };
-		49451DE31EB8667500BBE658 /* NSAttributedString+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 49451DD11EB8667500BBE658 /* NSAttributedString+Safe.m */; };
-		49451DE41EB8667500BBE658 /* NSAttributedString+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 49451DD11EB8667500BBE658 /* NSAttributedString+Safe.m */; };
-		49451DE51EB8667500BBE658 /* NSDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 49451DD31EB8667500BBE658 /* NSDictionary+Safe.m */; };
-		49451DE61EB8667500BBE658 /* NSDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 49451DD31EB8667500BBE658 /* NSDictionary+Safe.m */; };
-		49451DE71EB8667500BBE658 /* NSDictionary+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 49451DD31EB8667500BBE658 /* NSDictionary+Safe.m */; };
-		49451DE81EB8667500BBE658 /* NSObject+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 49451DD51EB8667500BBE658 /* NSObject+Safe.m */; };
-		49451DE91EB8667500BBE658 /* NSObject+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 49451DD51EB8667500BBE658 /* NSObject+Safe.m */; };
-		49451DEA1EB8667500BBE658 /* NSObject+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 49451DD51EB8667500BBE658 /* NSObject+Safe.m */; };
-		49451DEB1EB8667500BBE658 /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 49451DD71EB8667500BBE658 /* NSObject+Swizzling.m */; };
-		49451DEC1EB8667500BBE658 /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 49451DD71EB8667500BBE658 /* NSObject+Swizzling.m */; };
-		49451DED1EB8667500BBE658 /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 49451DD71EB8667500BBE658 /* NSObject+Swizzling.m */; };
-		49451DEE1EB8667500BBE658 /* NSString+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 49451DD91EB8667500BBE658 /* NSString+Safe.m */; };
-		49451DEF1EB8667500BBE658 /* NSString+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 49451DD91EB8667500BBE658 /* NSString+Safe.m */; };
-		49451DF01EB8667500BBE658 /* NSString+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 49451DD91EB8667500BBE658 /* NSString+Safe.m */; };
-		49451DF11EB8667500BBE658 /* UINavigationController+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 49451DDB1EB8667500BBE658 /* UINavigationController+Safe.m */; };
-		49451DF21EB8667500BBE658 /* UINavigationController+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 49451DDB1EB8667500BBE658 /* UINavigationController+Safe.m */; };
-		49451DF31EB8667500BBE658 /* UINavigationController+Safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 49451DDB1EB8667500BBE658 /* UINavigationController+Safe.m */; };
 		496DB6CB1E1FBC7E00FE2387 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 496DB6CA1E1FBC7E00FE2387 /* main.m */; };
 		496DB6CE1E1FBC7E00FE2387 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 496DB6CD1E1FBC7E00FE2387 /* AppDelegate.m */; };
 		496DB6D11E1FBC7E00FE2387 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 496DB6D01E1FBC7E00FE2387 /* ViewController.m */; };
@@ -59,22 +35,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		49451DCC1EB8667500BBE658 /* NSArray+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Safe.h"; sourceTree = "<group>"; };
-		49451DCD1EB8667500BBE658 /* NSArray+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Safe.m"; sourceTree = "<group>"; };
-		49451DCE1EB8667500BBE658 /* NSArray+SafeMRC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SafeMRC.h"; sourceTree = "<group>"; };
-		49451DCF1EB8667500BBE658 /* NSArray+SafeMRC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SafeMRC.m"; sourceTree = "<group>"; };
-		49451DD01EB8667500BBE658 /* NSAttributedString+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Safe.h"; sourceTree = "<group>"; };
-		49451DD11EB8667500BBE658 /* NSAttributedString+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Safe.m"; sourceTree = "<group>"; };
-		49451DD21EB8667500BBE658 /* NSDictionary+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Safe.h"; sourceTree = "<group>"; };
-		49451DD31EB8667500BBE658 /* NSDictionary+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Safe.m"; sourceTree = "<group>"; };
-		49451DD41EB8667500BBE658 /* NSObject+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Safe.h"; sourceTree = "<group>"; };
-		49451DD51EB8667500BBE658 /* NSObject+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Safe.m"; sourceTree = "<group>"; };
-		49451DD61EB8667500BBE658 /* NSObject+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzling.h"; sourceTree = "<group>"; };
-		49451DD71EB8667500BBE658 /* NSObject+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
-		49451DD81EB8667500BBE658 /* NSString+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Safe.h"; sourceTree = "<group>"; };
-		49451DD91EB8667500BBE658 /* NSString+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Safe.m"; sourceTree = "<group>"; };
-		49451DDA1EB8667500BBE658 /* UINavigationController+Safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Safe.h"; sourceTree = "<group>"; };
-		49451DDB1EB8667500BBE658 /* UINavigationController+Safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Safe.m"; sourceTree = "<group>"; };
 		496DB6C61E1FBC7E00FE2387 /* CrashToolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrashToolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		496DB6CA1E1FBC7E00FE2387 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		496DB6CC1E1FBC7E00FE2387 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -118,29 +78,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		49451DCB1EB8667500BBE658 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				49451DCC1EB8667500BBE658 /* NSArray+Safe.h */,
-				49451DCD1EB8667500BBE658 /* NSArray+Safe.m */,
-				49451DCE1EB8667500BBE658 /* NSArray+SafeMRC.h */,
-				49451DCF1EB8667500BBE658 /* NSArray+SafeMRC.m */,
-				49451DD01EB8667500BBE658 /* NSAttributedString+Safe.h */,
-				49451DD11EB8667500BBE658 /* NSAttributedString+Safe.m */,
-				49451DD21EB8667500BBE658 /* NSDictionary+Safe.h */,
-				49451DD31EB8667500BBE658 /* NSDictionary+Safe.m */,
-				49451DD41EB8667500BBE658 /* NSObject+Safe.h */,
-				49451DD51EB8667500BBE658 /* NSObject+Safe.m */,
-				49451DD61EB8667500BBE658 /* NSObject+Swizzling.h */,
-				49451DD71EB8667500BBE658 /* NSObject+Swizzling.m */,
-				49451DD81EB8667500BBE658 /* NSString+Safe.h */,
-				49451DD91EB8667500BBE658 /* NSString+Safe.m */,
-				49451DDA1EB8667500BBE658 /* UINavigationController+Safe.h */,
-				49451DDB1EB8667500BBE658 /* UINavigationController+Safe.m */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
 		496DB6BD1E1FBC7D00FE2387 = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +101,6 @@
 		496DB6C81E1FBC7E00FE2387 /* CrashToolDemo */ = {
 			isa = PBXGroup;
 			children = (
-				49451DCB1EB8667500BBE658 /* Source */,
 				496DB6CC1E1FBC7E00FE2387 /* AppDelegate.h */,
 				496DB6CD1E1FBC7E00FE2387 /* AppDelegate.m */,
 				496DB6CF1E1FBC7E00FE2387 /* ViewController.h */,
@@ -337,17 +273,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49451DE21EB8667500BBE658 /* NSAttributedString+Safe.m in Sources */,
 				496DB6D11E1FBC7E00FE2387 /* ViewController.m in Sources */,
-				49451DEE1EB8667500BBE658 /* NSString+Safe.m in Sources */,
 				496DB6CE1E1FBC7E00FE2387 /* AppDelegate.m in Sources */,
-				49451DDF1EB8667500BBE658 /* NSArray+SafeMRC.m in Sources */,
-				49451DE81EB8667500BBE658 /* NSObject+Safe.m in Sources */,
-				49451DE51EB8667500BBE658 /* NSDictionary+Safe.m in Sources */,
-				49451DF11EB8667500BBE658 /* UINavigationController+Safe.m in Sources */,
 				496DB6CB1E1FBC7E00FE2387 /* main.m in Sources */,
-				49451DEB1EB8667500BBE658 /* NSObject+Swizzling.m in Sources */,
-				49451DDC1EB8667500BBE658 /* NSArray+Safe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,14 +284,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				496DB6E41E1FBC7E00FE2387 /* CrashToolDemoTests.m in Sources */,
-				49451DDD1EB8667500BBE658 /* NSArray+Safe.m in Sources */,
-				49451DE31EB8667500BBE658 /* NSAttributedString+Safe.m in Sources */,
-				49451DF21EB8667500BBE658 /* UINavigationController+Safe.m in Sources */,
-				49451DEC1EB8667500BBE658 /* NSObject+Swizzling.m in Sources */,
-				49451DEF1EB8667500BBE658 /* NSString+Safe.m in Sources */,
-				49451DE61EB8667500BBE658 /* NSDictionary+Safe.m in Sources */,
-				49451DE91EB8667500BBE658 /* NSObject+Safe.m in Sources */,
-				49451DE01EB8667500BBE658 /* NSArray+SafeMRC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,14 +292,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				496DB6EF1E1FBC7E00FE2387 /* CrashToolDemoUITests.m in Sources */,
-				49451DDE1EB8667500BBE658 /* NSArray+Safe.m in Sources */,
-				49451DE41EB8667500BBE658 /* NSAttributedString+Safe.m in Sources */,
-				49451DF31EB8667500BBE658 /* UINavigationController+Safe.m in Sources */,
-				49451DED1EB8667500BBE658 /* NSObject+Swizzling.m in Sources */,
-				49451DF01EB8667500BBE658 /* NSString+Safe.m in Sources */,
-				49451DE71EB8667500BBE658 /* NSDictionary+Safe.m in Sources */,
-				49451DEA1EB8667500BBE658 /* NSObject+Safe.m in Sources */,
-				49451DE11EB8667500BBE658 /* NSArray+SafeMRC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,7 +370,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -500,7 +412,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
