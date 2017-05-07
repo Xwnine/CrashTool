@@ -1,6 +1,6 @@
 //
 //  NSMutableAttributedString+Safe.h
-//  CrashTool
+//  CrashToolDemo
 //
 //  Created by Andrew on 2017/5/7.
 //  Copyright © 2017年 Andrew. All rights reserved.
