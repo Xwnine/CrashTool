@@ -2,7 +2,7 @@
 
 解决各种数组越界、字典空值、字符串下标越界等常见Crash解决，实现App保活。
 
-利用runtime特性，实现常见Crash规避，实现思路很简单，具体请看源码。单元测试较完整，经过一段时间的测试和修改，决定将method exchange的代码放到category的load方法中，使用的时候无需再添加任何代码。最新的commit，去掉了之前try_catch_finaly 的代码。
+利用runtime特性，实现常见Crash规避，实现思路很简单，具体请看源码。单元测试较完整，经过一段时间的测试和修改，决定将method exchange的代码放到category的load方法中，使用的时候无需再添加任何代码。
 
 
 
