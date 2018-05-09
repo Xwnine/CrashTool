@@ -113,12 +113,10 @@
 @implementation UIViewController (SafeTransitionLock)
 
 + (void)load {
-
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         [self swizzleInstanceMethod:@selector(viewDidAppear:) withSwizzledSel:@selector(sf_viewDidAppear:)];
     });
-    
 }
 
 - (void)sf_viewDidAppear:(BOOL)animated {
