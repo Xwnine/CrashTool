@@ -5,7 +5,7 @@
 利用runtime特性，实现常见Crash规避，实现思路很简单，具体请看源码。单元测试较完整，经过一段时间的测试和修改，决定将method exchange的代码放到category的load方法中，使用的时候无需再添加任何代码。
 
 
-
+新增unrecognized selector sent to instance 处理
 
 
 
