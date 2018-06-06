@@ -5,9 +5,6 @@
 利用runtime特性，实现常见Crash规避，实现思路很简单，具体请看源码。单元测试较完整，经过一段时间的测试和修改，决定将method exchange的代码放到category的load方法中，使用的时候无需再添加任何代码。
 
 
-新增unrecognized selector sent to instance 处理
-
-
 
 系统要求
 
@@ -32,6 +29,8 @@ CocoaPods
 
 
 简单总结一下，日常开发中常见的carsh主要发生在下面一些类：
+
+新增unrecognized selector sent to instance 处理
 
 一：NSArray数组
 
